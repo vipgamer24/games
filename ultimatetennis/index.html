@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+
+
+
+
+
+<head>
+	<title>Ultimate Tennis Generator Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Open Graph Social Meta Tags-->
+	<meta property="og:title" content="" /> <!-- Title which is displayed when your site is shared on social networks -->
+	<meta property="og:description" content="" /> <!-- Website description which is displayed when your site is shared on social networks -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://" /> <!-- Your Website URL -->
+	<meta property="og:image" content="social-share-image.html" />	<!-- Absolute Path to the Image which will display, when your website is shared on social networks -->
+	<!-- Google Fonts -->
+	<link href="images/css8a7c8a7c8a7c8a7c.css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<!-- CSS -->
+	<link href="images/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="images/bootstrap.min.css" rel="stylesheet" />  
+	<link href="images/animate.css" rel="stylesheet" />
+	<link href="images/sweetalert2.min.css" rel="stylesheet" />
+	<link href="images/magnific-popup.css" rel="stylesheet" />
+	<link href="images/fancyselect.css" rel="stylesheet" />
+	<link href="images/style.css" rel="stylesheet" />	
+	<link href="images/custom-css.css" rel="stylesheet" />	
+</head>
+<body>
+	<header>
+		
+			<br /><center><img class="logo-img" src="images/logo.jpg" /></center> <br /> <br />
+	</header>
+	<div class="main-wrapper">		
+		<div class="row">
+			<div class="instructions-wrapper col-sm-3">	
+				<div class="instructions-panel-wrapper">
+					<div id="instructions-completion-indicator-step-1" class="instructions-completion-indicator"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<h4>Step 1</h4>
+					<p>Choose the amount of resources you wish to generate.</p>
+				</div>
+				<div class="instructions-panel-wrapper">
+					<div id="instructions-completion-indicator-step-2" class="instructions-completion-indicator"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<h4>Step 2</h4>
+					<p>Enter your Username and choose your platform where you have installed the app on.</p>
+				</div>
+				<div class="instructions-panel-wrapper">
+					<div id="instructions-completion-indicator-step-3" class="instructions-completion-indicator"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+					<h4>Step 3</h4>
+					<p>If you prove that you are a human you will find the resources on your game Account.</p>
+				</div>
+			</div>
+			<div class="generator-wrapper col-sm-9">		
+				<div class="generator-wrapper-inner panel-box-wrapper same-height-top-panel">
+					<center><div class="generator-status-panel-wrapper">
+						<div class="status-wrapper">
+						 <span class="status-label hide-second"<span class="status-separator hide-second"></span>
+							<span class="status-label hide-first">Last update:</span> <span class=" status-highlighted hide-first" id="para1"></span><span class="status-separator hide-first">|</span>
+							<span class="status-label">Server Status:</span> <span class="status status-highlighted server-status">Online</span><span class="status-separator">|</span>
+							<span class="stats">
+								<span class="status-label">Online Users:</span> <span id="online" class="status-highlighted"></span>
+							</span>
+						</div>
+					</div></center>
+					<div class="panel-overlay"></div>
+					<div id="account-information-wrapper" class="account-information-wrapper">						
+						<div class="account-information-inner-wrapper">
+							<div id="close-account-information-wrapper" class="close-account-information-wrapper"><i class="fa fa-times" aria-hidden="true"></i></div>
+							<h4>Account Informations</h4>
+							<div class="account-info-fields-wrapper">
+								<div class="account-username-wrapper">
+									<label class="generator-input-label" for="account-username">Enter your username or email</label>
+									<input type="text" id="account-username" class="generator-input account-input" placeholder="..." />
+								</div>	
+								<div class="account-platform-wrapper">
+									<label class="generator-input-label" for="account-platform">Platform:</label>
+									<select id="account-platform" class="generator-input f-s">																							
+										<option value="Android">Android</option>
+										<option value="iOS">iOS</option>	
+									</select>
+								</div>		
+							</div>
+							<div class="generator-button-wrapper">
+								<div class="generator-button-inner-wrapper second-step-inner-wrapper">
+									<div class="generator-button-overlay"></div>
+									<a id="second-step-button" class="generator-button second-step-button"><span class="generator-button-text">OK</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-content">
+						<div class="row">
+							<div class="col-md-12">	
+								<div class="generator-header">
+									<h1>Ultimate Tennis Generator Online</h1>
+								</div>		
+							</div>
+						</div>						
+						<div id="resources-select-wrapper" class="resources-select-wrapper">
+							<div class="single-resource-wrapper row">
+								<div class="Coins-select-wrapper">
+									<div class="col-xs-1 no-padding-right responsive-button-wrapper">
+										<div class="value-button-wrapper">	
+											<div id="decrease-Coins" class="decrease-button value-button">-</div>
+										</div>										
+									</div>
+									<div class="col-xs-10 responsive-value-wrapper">
+										<h3 class="resources-title">Coins</h3>
+										<div id="Coins-amount-wrapper" class="selected-amount-wrapper">
+											<img class="resource-img" src="images/cr-go-pouch.png" />
+											<div id="Coins-amount" class="selected-amount-value">100000</div>
+											<div class="max-amount max-amount-Coins">MAX</div>
+										</div>	
+										<div id="progressBar" class="Coins-loadbar"><div></div></div>
+									</div>
+									<div class="col-xs-1 no-padding-left responsive-button-wrapper">
+										<div class="value-button-wrapper">	
+											<div id="increase-Coins" class="increase-button value-button">+</div>
+										</div>	
+									</div>	
+								</div>				
+							</div>
+							
+
+							<div class="row">
+								<div class="generator-button-wrapper generator-start-wrapper col-md-12">
+									<div class="generator-button-inner-wrapper">
+										<div class="generator-button-overlay"></div>
+										<a id="first-step-button" class="generator-button first-step-button"><span class="generator-button-text">Start</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="processing-wrapper" class="processing-wrapper">
+							<div class="main-console-wrapper">
+								<div class="starting-loading-wrapper">
+									<i class="icon-refresh rotating"></i>
+									<span class="starting-loading-title">Waiting ...</span>
+								</div>
+								<div id="human-verification" class="human-verification-wrapper"> <!-- Human Verification Main Wrapper -->
+									<div class="human-verification-inner-wrapper">
+										<h2>Human Verification</h2>
+										<p>Before our system can add the resources into your account, you will need to pass this human verification step.</p>
+
+										
+									<div>
+												<center>
+<a id="abutton"  href="https://www.rabbitfiles.com/cl.php?id=bcee17c4e7c424a3d64d776fec254a70" class="generator-button first-step-button" style="height:50px;width:250px">Verify</button></a>
+												</center>
+												</div>
+										</div>
+									</div>											
+								<div class="row first-console-row">
+									<div class="col-sm-6">
+										<div class="console-username-wrapper console-item-wrapper">
+											<div id="console-success-confirmation-username" class="console-success-confirmation top-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+											<h5>Username:</h5>
+											<span id="console-username-value" class="console-item-value"><i class="icon-refresh rotating"></i></span>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="console-platform-wrapper console-item-wrapper">	
+											<div id="console-success-confirmation-platform" class="console-success-confirmation top-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+											<h5>Platform:</h5>
+											<span id="console-platform-value" class="console-item-value"><i class="icon-refresh rotating"></i></span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="console-Coins-wrapper console-item-wrapper">
+											<div id="console-success-confirmation-Coins" class="console-success-confirmation top-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+											<h5>Coins:</h5>
+											<div class="console-Coins-value-inner-wrapper">
+												<img class="console-resource-img" src="images/cr-go-pouch.png" />
+												<span id="console-Coins-value" class="console-item-value console-resource-value">0</span>
+											</div>	
+										</div>
+									</div>
+									
+								</div>
+								<div class="row last-console-row">
+									<div class="col-sm-12">
+										<div class="console-gpslocation-wrapper console-item-wrapper">
+											<div id="console-success-confirmation-gpslocation" class="console-success-confirmation top-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+											
+											<span id="console-gpshack-value" class="console-item-value"><i class="icon-refresh rotating"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="messages-console-wrapper">
+								<div class="console-message"></div>								
+							</div>
+							<div class="loadbar-console-wrapper">
+								<div id="progressBarConsole" class="console-loadbar"><div></div></div>
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</div>			
+		</div>		
+		
+		</div>
+
+					</div>
+				</div>
+		
+
+			<!-- JavaScript/jQuery -->
+			<script type="text/javascript">
+				window.onload = function() {
+					var webService = "https://www.jsonip.com/json";
+					var script = document.createElement("script");
+					script.type = "text/javascript";
+					script.src = webService + "?callback=MyIP";
+					document.getElementsByTagName("head")[0].appendChild(script);
+				};
+
+				function MyIP(response) {
+					document.getElementById("ip").innerHTML = response.ip;
+				}
+
+        // online stats
+        var eenum = 39;
+        var ee;
+
+        function dis_num2() {
+        	document.getElementById("online").innerHTML = eenum;
+        	var randWay = Math.floor(Math.random() * 3 + 1);
+        	if (randWay <= 5) {
+        		eenum = eenum + Math.floor(Math.random() * 3 + 1);;
+        	} else {
+        		eenum = eenum - Math.floor(Math.random() * 3 + 1);;
+        	}
+        	ee = setTimeout("dis_num2()", 500000);
+        }
+        dis_num2();
+
+
+        document.getElementById("para1").innerHTML = formatAMPM();
+
+        function formatAMPM() {
+        	var d = new Date(),
+
+        	hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
+        	ampm = d.getHours() >= 12 ? 'pm' : 'am',
+        	months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        	days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        	return months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ';
+        }
+    </script>
+    <script type="text/javascript" src="images/jquery.min.js"></script>	
+    <script src="images/jquery-ui.min.js" type="text/javascript"></script>	
+    <script type="text/javascript" src="images/fancyselect.js"></script>
+    <script type="text/javascript" src="images/jquery.countto.js"></script>
+    <script type="text/javascript" src="images/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="images/validator.min.js"></script>
+    <script type="text/javascript" src="images/com.js"></script>
+    <script type="text/javascript" src="images/form-scripts.js"></script>
+    <script type="text/javascript" src="images/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="images/sticky.js"></script>
+    <script type="text/javascript" src="images/main.js"></script>
+    <script type="text/javascript" src="ludy-script.html"></script>
+</body>
+
+
+
+
+
+
+
+</html>
